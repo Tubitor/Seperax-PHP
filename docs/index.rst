@@ -1,3 +1,4 @@
-# Seperax PHP
+SEPERAX PHP
+===========
 
-Documentation under construction.
+The documentation is currently under construction.
