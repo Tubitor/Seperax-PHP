@@ -16,4 +16,10 @@
  * limitations under the License.
  */
 
+/**
+ * @version 1.0
+ * @author Tubitor Developers
+ * @link https://seperax.com/
+ */
+
 require_once './input.seperax.php';
