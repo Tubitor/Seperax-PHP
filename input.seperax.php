@@ -36,6 +36,16 @@ function sanitize_mail(string $input): string
 }
 
 /**
+ * sanitize_phone
+ * @since 1.0
+ */
+function sanitize_phone(string $input): string
+{
+    if (substr($input, 0, 1) === '+') $input = substr($input, 0, 1);
+    return $input;
+}
+
+/**
  * is_mail
  * @since 1.0
  */

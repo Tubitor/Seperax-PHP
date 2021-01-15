@@ -29,3 +29,13 @@ function sanitize_text(string $input, bool $removeTagsCompletely = false): strin
  */
 function sanitize_mail(string $input): string
 ```
+
+## sanitize_phone
+
+```
+/**
+ * sanitize_phone
+ * @since 1.0
+ */
+function sanitize_phone(string $input): string
+```

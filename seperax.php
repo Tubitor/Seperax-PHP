@@ -22,4 +22,5 @@
  * @link https://seperax.com/
  */
 
+require_once './helpers.seperax.php';
 require_once './input.seperax.php';
