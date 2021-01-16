@@ -1,4 +1,4 @@
-# Checking
+# Validating
 
 ## is_mail 
 
