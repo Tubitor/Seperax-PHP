@@ -9,9 +9,9 @@ A PHP Library to make improve your coding experience.
 
 ## Get started
 
-1. Download the code [here from GitHub](https://github.com/Tubitor/Seperax-PHP/releases).
+1. Download the code [here from GitHub](https://github.com/Tubitor/Seperax-PHP/releases)
 2. Create a new folder (e.g. `seperax`) in your project
-3. Put all downloaded `.php` files into the new folder (not the `docs` folder or the `LICENSE`).
+3. Put all files in the `src` folder into the new folder
 4. Import Seperax in your project with one line of code:
 ```
 require_once './seperax/seperax.php';
