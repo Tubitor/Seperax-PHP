@@ -1,4 +1,5 @@
 version: 2
+site_name: "Seperax PHP"
 
 mkdocs:
   configuration: mkdocs.yml
