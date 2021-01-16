@@ -22,6 +22,12 @@
  * @link https://seperax.com/
  */
 
-require_once './helpers.seperax.php';
-require_once './input.seperax.php';
-require_once './mysql.seperax.php';
+if (file_exists(__DIR__ . '/helpers.seperax.php'))
+    require_once __DIR__ . '/helpers.seperax.php';
+
+if (file_exists(__DIR__ . '/input.seperax.php'))
+    require_once __DIR__ . '/input.seperax.php';
+
+if (file_exists(__DIR__ . '/mysql.seperax.php'))
+    if (class_exists('PDO'))
+        require_once __DIR__ . '/mysql.seperax.php';

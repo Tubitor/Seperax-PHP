@@ -9,6 +9,7 @@
  * MySQL
  * @since 1.0
  */
+
 class MySQL
 {
 
