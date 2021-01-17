@@ -18,3 +18,22 @@ require_once './seperax/seperax.php';
 ```
 
 The `seperax.php` file will import the other Seperax-files for you :)
+
+## Before you use Seperax-PHP in production
+
+When you download Seperax-PHP, you have all offical addons in your project. To improve performance,
+delete the addonds you don't use.
+
+**Required files:**
+* seperax.php
+* helpers.seperax.php
+
+All other files can simply be deleted. If you want to import an addon back in, just add the file back into the folder.
+
+## PHP Modules
+
+For some addons you need specific PHP Modules enabled. Don't worry, Seperax-PHP won't import addons you can't use.
+
+|Module|Required PHP Modules|
+|-|-|
+|MySQL|PDO_MySQL|

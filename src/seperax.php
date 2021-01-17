@@ -17,17 +17,51 @@
  */
 
 /**
- * @version 1.0
+ * @version 1.1
  * @author Tubitor Developers
  * @link https://seperax.com/
  */
 
+/**
+ * Seperax Helpers
+ * @since 1.0
+ */
 if (file_exists(__DIR__ . '/helpers.seperax.php'))
     require_once __DIR__ . '/helpers.seperax.php';
 
+/**
+ * Input Addon
+ * @since 1.0
+ */
 if (file_exists(__DIR__ . '/input.seperax.php'))
     require_once __DIR__ . '/input.seperax.php';
 
+/**
+ * MySQL Addon
+ * @since 1.0
+ */
 if (file_exists(__DIR__ . '/mysql.seperax.php'))
     if (class_exists('PDO'))
         require_once __DIR__ . '/mysql.seperax.php';
+
+/**
+ * Seperax Actions
+ * @since 1.1
+ */
+if (file_exists(__DIR__ . '/actions.seperax.php'))
+    require_once __DIR__ . '/actions.seperax.php';
+
+/**
+ * Fetch
+ * @since 1.1
+ */
+if (file_exists(__DIR__ . '/fetch.seperax.php'))
+    if (function_exists('curl_init'))
+        require_once __DIR__ . '/fetch.seperax.php';
+
+/**
+ * Shortcodes
+ * @since 1.1
+ */
+if (file_exists(__DIR__ . '/shortcodes.seperax.php'))
+    require_once __DIR__ . '/shortcodes.seperax.php';

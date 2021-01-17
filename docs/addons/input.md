@@ -1,4 +1,4 @@
-# Sanitizing
+# Input
 
 ## sanitize_string
 
@@ -38,4 +38,24 @@ function sanitize_mail(string $input): string
  * @since 1.0
  */
 function sanitize_phone(string $input): string
+```
+
+## is_mail 
+
+```
+/**
+ * is_mail
+ * @since 1.0
+ */
+function is_mail(string $input): bool
+```
+
+## is_phone
+
+```
+/**
+ * is_phone
+ * @since 1.0
+ */
+function is_phone(string $input): bool
 ```
