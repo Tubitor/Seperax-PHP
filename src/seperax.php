@@ -50,3 +50,11 @@ if (file_exists(__DIR__ . '/mysql.seperax.php'))
  */
 if (file_exists(__DIR__ . '/actions.seperax.php'))
     require_once __DIR__ . '/actions.seperax.php';
+
+/**
+ * Fetch
+ * @since 1.1
+ */
+if (file_exists(__DIR__ . '/fetch.seperax.php'))
+    if (function_exists('curl_init'))
+        require_once __DIR__ . '/fetch.seperax.php';
