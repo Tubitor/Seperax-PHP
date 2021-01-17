@@ -58,3 +58,10 @@ if (file_exists(__DIR__ . '/actions.seperax.php'))
 if (file_exists(__DIR__ . '/fetch.seperax.php'))
     if (function_exists('curl_init'))
         require_once __DIR__ . '/fetch.seperax.php';
+
+/**
+ * Shortcodes
+ * @since 1.1
+ */
+if (file_exists(__DIR__ . '/shortcodes.seperax.php'))
+    require_once __DIR__ . '/shortcodes.seperax.php';
