@@ -65,3 +65,10 @@ if (file_exists(__DIR__ . '/fetch.seperax.php'))
  */
 if (file_exists(__DIR__ . '/shortcodes.seperax.php'))
     require_once __DIR__ . '/shortcodes.seperax.php';
+
+/**
+ * Browser Detection
+ * @since 1.2
+ */
+if (file_exists(__DIR__ . '/browser.seperax.php'))
+    require_once __DIR__ . '/browser.seperax.php';
