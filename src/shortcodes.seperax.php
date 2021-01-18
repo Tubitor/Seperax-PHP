@@ -57,10 +57,3 @@ function parse_shortcodes(string $input): string
     }
     return $result;
 }
-
-/**
- * hello="world" age="13": 
- *      /(([a-zA-Z0-9_]*?)(=")(.*?)("))/g
- * [myshortcode title="Hello World" image="https://picsum.photos/300" id="3"]:
- *      /(\[)([a-zA-Z0-9_])(([ a-zA-Z0-9_]*?)(=")(.*?)("))(\])/g
- */

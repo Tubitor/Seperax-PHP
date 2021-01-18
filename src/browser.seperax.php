@@ -6,51 +6,20 @@
  */
 
 /**
- * detect_browser_version
- * @since 1.0
- */
-function detect_browser_version(string $userAgent = ""): string
-{
-    if (strlen($userAgent) === 0) $userAgent = $_SERVER['HTTP_USER_AGENT'];
-
-    return 'unknown';
-}
-
-/**
- * detect_browser_name
- * @since 1.0
- */
-function detect_browser_name(string $userAgent = ""): string
-{
-    if (strlen($userAgent) === 0) $userAgent = $_SERVER['HTTP_USER_AGENT'];
-
-    $browserList = [
-        '/Edge/'
-    ];
-
-    return 'unknown';
-}
-
-/**
- * detect_os
- * @since 1.0
- */
-function detect_os(string $userAgent = ""): string
-{
-    if (strlen($userAgent) === 0) $userAgent = $_SERVER['HTTP_USER_AGENT'];
-
-    return 'unknown';
-}
-
-/**
  * detect_bot
  * @since 1.0
  */
-function detect_bot(): bool
+function detect_bot(string $userAgent = ""): bool
 {
-    return (isset($_SERVER["HTTP_USER_AGENT"]) ? preg_match('/(bot|crawl|spider|slurp|facebookexternalhit|grabber)/i', $_SERVER["HTTP_USER_AGENT"]) > 0 : false);
+    if (strlen($userAgent) === 0) $userAgent = $_SERVER['HTTP_USER_AGENT'];
+    $userAgent = trim($userAgent);
+    return preg_match('/(bot|crawl|spider|slurp|facebookexternalhit|grabber)/i', $userAgent) > 0;
 }
 
+/**
+ * detect_browser_data
+ * @since 1.0
+ */
 function detect_browser_data(string $userAgent = ""): array
 {
     if (strlen($userAgent) === 0) $userAgent = $_SERVER['HTTP_USER_AGENT'];
