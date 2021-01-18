@@ -79,3 +79,10 @@ if (file_exists(__DIR__ . '/browser.seperax.php'))
  */
 if (file_exists(__DIR__ . '/nonces.seperax.php'))
     require_once __DIR__ . '/nonces.seperax.php';
+
+/**
+ * Router
+ * @since 1.2
+ */
+if (file_exists(__DIR__ . '/router.seperax.php'))
+    require_once __DIR__ . '/router.seperax.php';
