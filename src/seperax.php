@@ -17,7 +17,7 @@
  */
 
 /**
- * @version 1.1
+ * @version 1.2
  * @author Tubitor Developers
  * @link https://seperax.com/
  */
@@ -65,3 +65,24 @@ if (file_exists(__DIR__ . '/fetch.seperax.php'))
  */
 if (file_exists(__DIR__ . '/shortcodes.seperax.php'))
     require_once __DIR__ . '/shortcodes.seperax.php';
+
+/**
+ * Browser Detection
+ * @since 1.2
+ */
+if (file_exists(__DIR__ . '/browser.seperax.php'))
+    require_once __DIR__ . '/browser.seperax.php';
+
+/**
+ * Nonce Security
+ * @since 1.2
+ */
+if (file_exists(__DIR__ . '/nonces.seperax.php'))
+    require_once __DIR__ . '/nonces.seperax.php';
+
+/**
+ * Router
+ * @since 1.2
+ */
+if (file_exists(__DIR__ . '/router.seperax.php'))
+    require_once __DIR__ . '/router.seperax.php';

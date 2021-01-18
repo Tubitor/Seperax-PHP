@@ -7,6 +7,11 @@ A PHP Library to make improve your coding experience.
 * Helper functions like `starts_with` or `ends_with`
 * More!
 
+## Documentation
+
+There is a full documentation about all the features of Seperax-PHP on ReadTheDocs:  
+https://seperax-php.readthedocs.io/en/latest/
+
 ## Get started
 
 1. Download the code [here from GitHub](https://github.com/Tubitor/Seperax-PHP/releases)
@@ -24,9 +29,9 @@ The `seperax.php` file will import the other Seperax-files for you :)
 When you download Seperax-PHP, you have all offical addons in your project. To improve performance,
 delete the addonds you don't use.
 
-**Required files:**
-* seperax.php
-* helpers.seperax.php
+**Required files:**  
+- seperax.php
+- helpers.seperax.php
 
 All other files can simply be deleted. If you want to import an addon back in, just add the file back into the folder.
 
