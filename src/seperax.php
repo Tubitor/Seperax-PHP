@@ -72,3 +72,10 @@ if (file_exists(__DIR__ . '/shortcodes.seperax.php'))
  */
 if (file_exists(__DIR__ . '/browser.seperax.php'))
     require_once __DIR__ . '/browser.seperax.php';
+
+/**
+ * Nonce Security
+ * @since 1.2
+ */
+if (file_exists(__DIR__ . '/nonces.seperax.php'))
+    require_once __DIR__ . '/nonces.seperax.php';
